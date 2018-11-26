@@ -45,6 +45,7 @@ export class FooterComponent implements OnInit {
     'Blog'
   ];
 
+  follow_us = ['fa-twitter', 'fa-facebook', 'fa-youtube', 'fa-instagram'];
 
   constructor() {
     for (let i = 0; i <= this.number; i++) {

@@ -21,11 +21,8 @@
     </div>
     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
         Follow us:
-        <span class="follow-icon">
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-youtube"></i>
-          <i class="fa fa-instagram"></i>
+        <span class="follow-icon" *ngFor="let item of follow_us">
+          <i class="fa {{item}}"></i>
         </span>
     </div>
 </div>

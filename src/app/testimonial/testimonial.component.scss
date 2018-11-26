@@ -1,0 +1,45 @@
+/*---------------- Oval ----------------*/
+
+.oval-circle {
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 100px 80px;
+    border-top-left-radius: 70px 70px;
+    border-bottom-right-radius: 70px 90px;
+    border-bottom-left-radius: 100px 90px;
+}
+
+
+/* ----------------- End ------------------- */
+
+.test-card {
+    background: #dcf5e2;
+    height: 400px;
+    position: relative;
+}
+
+.test-user {
+    // background-color: #cccccc;
+    position: absolute;
+    top: -30px;
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    width: 80px;
+}
+
+.test-leaf {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.test-content {
+    position: relative;
+    top: 50px;
+    padding: 10px;
+}

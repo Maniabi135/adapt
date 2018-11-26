@@ -1,0 +1,30 @@
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" *ngFor="let item of testimonail">
+            <div class="test-card">
+                <!--style="background-image: url('./assets/img/login/d.jpg');">  -->
+                <img src="{{item.user}}" alt="user" class="test-user">
+                <div class="test-content">
+                    <h6>{{item.name}}</h6>
+                    <p>{{item.role}}</p>
+                    <p>"</p>
+                    <p>{{item.description}}</p>
+                </div>
+                <img src="{{item.leaf}}" alt="Leaf" class="test-leaf">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="pt-5 container">
+    <div class="bg-l-green test-card">
+        <div class="test-user" [ngStyle]="{'background': url('./../assets/img/test-1.png')}">
+            <h6>1212</h6>
+            <p>Yes</p>
+            <div>Dlkdlsjml</div>
+        </div>
+        <img src="assets/img/test-1.png" alt="user" class="test-user">
+        <img src="assets/img/test-11.png" alt="Leaf" class="test-leaf">
+    </div>
+</div> -->
