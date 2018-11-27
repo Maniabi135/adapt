@@ -1,28 +1,31 @@
-<div>Tree</div>
-<div class="row" *ngFor="let item of footer_dir_list">
-    <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">{{item.name}}</div>
-    <div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
-        <li *ngFor="let data of item.data" class="alpha-letter">{{data}}</li>
+<div class="container">
+    <!-- <div style="background: url('./assets/img/footer.png');"></div> -->
+    <img src="assets/img/footer.png" alt="image">
+    <div class="row" *ngFor="let item of footer_dir_list">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">{{item.name}}</div>
+        <div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
+            <li *ngFor="let data of item.data" class="alpha-letter">{{data}}</li>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">Adapt</div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4" *ngFor="let item of footer_logo_list">
-                {{item}}
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">Adapt</div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4" *ngFor="let item of footer_logo_list">
+                    {{item}}
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-        <i class="fa fa-copyright"></i>&nbsp;<span>2018 SLI Technologies Inc. All rights reserved.</span>
-    </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-        Follow us:
-        <span class="follow-icon" *ngFor="let item of follow_us">
-          <i class="fa {{item}}"></i>
-        </span>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <i class="fa fa-copyright"></i>&nbsp;<span>2018 SLI Technologies Inc. All rights reserved.</span>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            Follow us:
+            <span class="follow-icon" *ngFor="let item of follow_us">
+              <i class="fa {{item}}"></i>
+            </span>
+        </div>
     </div>
 </div>
