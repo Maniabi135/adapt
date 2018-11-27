@@ -8,6 +8,16 @@
 
 /* --------- Global Styles -------- */
 
+@font-face {
+    font-family: 'Regular-font';
+    src: url('/font/oswald.regular.ttf');
+}
+
+@font-face {
+    font-family: 'Medium-font';
+    src: url('assets/font/geomanist/hinted-Geomanist-Medium.ttf');
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -18,8 +28,63 @@
 
 p,
 a {
+    font-family: "Open Sans";
     font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
+
+h1 {
+    font-family: 'Medium-font';
+}
+
+
+/* -------------------------------------- */
+
+.bg-d-grey {
+    background: #22282a !important;
+}
+
+.bg-l-grey {
+    background: #2a3134 !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.nav-bg-dark {
+    background: #293033 !important;
+}
+
+.text-green {
+    color: #8bcc6e !important;
+}
+
+.bg-green {
+    background: #8bcc6e !important;
+}
+
+.bg-grey {
+    background: #586266 !important;
+}
+
+.text-l-grey {
+    color: #6c767b !important;
+}
+
+.text-blue {
+    color: rgb(1, 118, 255) !important;
+}
+
+.bg-blue {
+    background: rgb(1, 118, 255) !important;
+}
+
+
+/* -------------------------------------- */
 
 
 /* ------------------- Navbar ------------------ */
@@ -59,6 +124,12 @@ a {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {}
+
+
+/*---------------------------------------------------*/
+
+
+/*---------------------------------------------------*/
 
 
 /*---------------------------------------------------*/
