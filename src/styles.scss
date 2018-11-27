@@ -15,7 +15,12 @@
 
 @font-face {
     font-family: 'Medium-font';
-    src: url('assets/font/geomanist/hinted-Geomanist-Medium.ttf');
+    src: url('./assets/font/geomanist/hinted-Geomanist-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Light-font';
+  src: url('./assets/font/geomanist/hinted-Geomanist-Light.ttf');
 }
 
 .pointer {
@@ -37,9 +42,16 @@ a {
 }
 
 h1 {
-    font-family: 'Medium-font';
+    font-family: 'Light-font' !important;
 }
 
+h5 {
+  font-family: 'Medium-font' !important;
+}
+
+.m-0{
+  margin: 0 !important;
+}
 
 /* -------------------------------------- */
 
@@ -62,7 +74,9 @@ h1 {
 .text-green {
     color: #8bcc6e !important;
 }
-
+.text-d-green{
+    color:#4c703c !important;
+}
 .bg-green {
     background: #8bcc6e !important;
 }
@@ -71,34 +85,27 @@ h1 {
     background: #586266 !important;
 }
 
+.text-grey {
+  color: #586266 !important;
+}
+
 .text-l-grey {
     color: #6c767b !important;
 }
 
 .text-blue {
-    color: rgb(1, 118, 255) !important;
+    color: #1b87e2 !important;
 }
 
 .bg-blue {
-    background: rgb(1, 118, 255) !important;
+    background: #1b87e2 !important;
 }
 
 
 /* -------------------------------------- */
 
 
-/* ------------------- Navbar ------------------ */
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: white !important;
-    background: blue;
-}
-
-
-/*---------------------------------------------------*/
 
 
 /* Extra small devices (phones, 600px and down) */

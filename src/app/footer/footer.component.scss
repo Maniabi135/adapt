@@ -2,7 +2,11 @@
 
 .follow-icon {
     padding: 0 15px;
-    color: rgb(1, 118, 255);
+    color: #1b87e2;
+}
+
+.follow-icon i:hover {
+  color: white;
 }
 
 
@@ -18,7 +22,10 @@
     cursor: pointer;
 }
 
-
+.alpha-letter:hover {
+    color: white;
+    text-decoration: underline !important;
+}
 /* ------------------- End Alphabet Class --------------- */
 
 
