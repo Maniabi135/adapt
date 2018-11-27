@@ -1,3 +1,4 @@
+import { ClientComponent } from './client/client.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,7 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { AboutComponent } from './about/about.component';
-import { ClientComponent } from './client/client.component';
 
 @NgModule({
   declarations: [

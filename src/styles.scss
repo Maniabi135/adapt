@@ -12,6 +12,53 @@
     cursor: pointer;
 }
 
-.bg-l-green {
-    background: #dcf5e2;
+.max-w-100 {
+    max-width: 100% !important;
 }
+
+p,
+a {
+    font-size: 14px;
+}
+
+
+/* ------------------- Navbar ------------------ */
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white !important;
+    background: blue;
+}
+
+
+/*---------------------------------------------------*/
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/*---------------------------------------------------*/

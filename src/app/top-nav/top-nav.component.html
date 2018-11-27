@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,8 +14,8 @@
     </div>
 </nav>
 <div class="container">
-    <div class="row">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+    <div class="row pt-5 pb-5">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-center">
             <h1>Adapt is all about fresh and up to date contacts</h1>
             <p>We help sales, marketing and business owners grow their business.</p>
             <button type="button" class="btn" [ngClass]="{
@@ -23,7 +23,9 @@
               'btn-outline-secondary':btn_text === 'Get a Demo'
             }" *ngFor="let btn_text of btn_list">{{btn_text}}</button>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"  style="background-image:url('./assets/img/3d-img.png');"></div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <img src="assets/img/3d-img.png" alt="img" class="max-w-100">
+        </div>
     </div>
 </div>
 <div class="row">
@@ -45,3 +47,5 @@
 
 
 
+
+<!-- style="background-image:url('./assets/img/3d-img.png');" -->
