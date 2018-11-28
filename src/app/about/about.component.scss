@@ -1,6 +1,39 @@
 .lizard-img {
     position: absolute;
     left: 0;
-    height: 390px;
 }
 
+.about-icon {
+    width: 51px;
+}
+
+@media only screen and(max-width: 767px) {
+    .about-icon {
+        width: 44px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .lizard-img {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .lizard-img {
+        height: 160px;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .lizard-img {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .lizard-img {
+        height: 370px;
+    }
+}

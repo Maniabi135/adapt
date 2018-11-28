@@ -6,7 +6,7 @@
 }
 
 .follow-icon i:hover {
-  color: white;
+    color: white;
 }
 
 
@@ -26,6 +26,8 @@
     color: white;
     text-decoration: underline !important;
 }
+
+
 /* ------------------- End Alphabet Class --------------- */
 
 
@@ -42,5 +44,27 @@
     position: relative;
 }
 
+.follow-text,
+.right-reserved {
+    font-size: 14px !important;
+}
+
 
 /* --------------------- End Tree ----------------- */
+
+.adapt-foot-logo {
+    width: 135px;
+}
+
+@media only screen and (max-width: 767px) {
+    .adapt-foot-logo {
+        width: 90px !important;
+    }
+    .right-reserved,
+    .follow-text {
+        font-size: 12px !important;
+    }
+    .follow-icon {
+        padding: 0 5px !important;
+    }
+}
