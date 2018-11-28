@@ -92,16 +92,13 @@ a {
 
 .breadcrumb {
     padding: 0px;
-    background: #D4D4D4;
+    background: #22282a;
     list-style: none;
     overflow: hidden;
     margin-top: 0px;
     margin-bottom: 0 !important;
     border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    -ms-border-radius: 0 !important;
-    -o-border-radius: 0 !important;
+    padding-left: 90px !important;
 }
 
 .breadcrumb>li+li:before {
@@ -113,21 +110,25 @@ a {
 }
 
 .breadcrumb li.active a {
-    background: grey;
-    line-height: 24px !important;
+    background: #2a3134;
+    line-height: 23px !important;
 }
 
 .breadcrumb li.completed a {
-    background: brown;
-    background: hsla(153, 57%, 51%, 1);
+    background: #22282a;
+    background: #22282a;
+}
+
+.breadcrumb li.last-one a {
+    background: #6c767b;
 }
 
 .breadcrumb li.active a:after {
-    border-left: 30px solid grey;
+    border-left: 30px solid #2a3134;
 }
 
 .breadcrumb li.completed a:after {
-    border-left: 30px solid hsla(153, 57%, 51%, 1);
+    border-left: 30px solid #22282a;
 }
 
 .breadcrumb li a {
@@ -147,7 +148,7 @@ a {
     border-top: 50px solid transparent;
     /* Go big on the size, and let overflow hide */
     border-bottom: 50px solid transparent;
-    border-left: 30px solid hsla(0, 0%, 83%, 1);
+    border-left: 30px solid grey;
     position: absolute;
     top: 50%;
     margin-top: -50px;
@@ -162,7 +163,7 @@ a {
     height: 0;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
-    border-left: 30px solid white;
+    border-left: 30px solid grey;
     position: absolute;
     top: 50%;
     margin-top: -50px;
@@ -184,11 +185,21 @@ a {
 }
 
 .breadcrumb li:last-child a {
-    line-height: 44px;
+    line-height: 40px;
 }
 
 
 /* ------------ */
+
+.bg-breadcrumb {
+    display: block;
+}
+
+@media only screen and (max-width: 575px) {
+    .bg-breadcrumb {
+        display: none !important;
+    }
+}
 
 .media {
     padding: 15px !important;
@@ -196,4 +207,44 @@ a {
 
 .w-50 {
     width: 50px !important;
+}
+
+.btn-green:focus {
+    box-shadow: 0 0 0 0.2rem rgba(186, 239, 183, 0.25) !important;
+}
+
+.btn-grey:focus {
+    box-shadow: 0 0 0 0.2rem rgba(180, 181, 181, 0.25) !important;
+}
+
+
+/* -------------- media ----------------- */
+
+@media only screen and (max-width: 575px) {
+    .logo-brand {
+        width: 50px !important;
+        height: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .logo-brand {
+        width: 70px !important;
+        height: 25px !important;
+    }
+    .breadcrumb {
+        padding-left: 70px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .breadcrumb {
+        padding-left: 70px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .breadcrumb {
+        padding-left: 90px !important;
+    }
 }
