@@ -44,7 +44,7 @@
     position: relative;
 }
 
-.follow-text,
+.follow,
 .right-reserved {
     font-size: 14px !important;
 }
@@ -56,13 +56,32 @@
     width: 135px;
 }
 
+.right-reserved {
+    text-align: left !important;
+}
+
+.follow {
+    text-align: right !important;
+}
+
+.order-first {
+    order: 1;
+}
+
+@media only screen and (max-width: 575px) {
+    .order-first {
+        order: -1 !important;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .adapt-foot-logo {
         width: 90px !important;
     }
     .right-reserved,
-    .follow-text {
+    .follow {
         font-size: 12px !important;
+        text-align: center !important;
     }
     .follow-icon {
         padding: 0 5px !important;

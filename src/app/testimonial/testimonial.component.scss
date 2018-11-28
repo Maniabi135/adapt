@@ -14,7 +14,6 @@
 
 .test-card {
     background: #eef7e9;
-    height: 400px;
     position: relative;
 }
 
@@ -41,18 +40,90 @@
 .test-content {
     position: relative;
     top: 50px;
-    padding:0 50px 50px 50px;
-    font-size: 14px;
+    padding: 0 50px 50px 50px;
 }
 
-.test-desg{
-  color: #b2bfad;
+.test-desg {
+    color: #b2bfad;
 }
 
-.quotes{
-  color: #c5e5b6;
+.quotes {
+    color: #c5e5b6;
 }
 
-.test-desc{
-  color: #85957e;
+.test-desc {
+    color: #85957e;
+}
+
+
+/* ------------------ Media Queries --------------- */
+
+@media only screen and (min-width: 320px) {
+    .test-card {
+        height: 350px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .test-user {
+        width: 60px;
+        top: -25px;
+    }
+    .test-content {
+        top: 40px;
+        padding: 0 10px 10px 10px;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .test-card {
+        height: 310px;
+    }
+    .test-content {
+        top: 40px;
+        padding: 0 25px 25px 25px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .test-card {
+        height: 310px;
+    }
+    .test-content {
+        top: 40px;
+        padding: 0 40px 40px 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .test-card {
+        height: 400px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .test-content {
+        top: 40px;
+        padding: 0 10px 10px 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .test-card {
+        height: 400px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .test-user {
+        width: 80px;
+        top: -40px;
+    }
+    .test-content {
+        top: 50px;
+        padding: 0 20px 20px 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .test-content {
+        padding: 0 40px 40px 40px;
+    }
 }
